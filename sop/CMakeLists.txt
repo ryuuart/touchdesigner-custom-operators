@@ -14,5 +14,5 @@ target_link_libraries(Sop
         Core
 )
 
-install(TARGETS Sop EXPORT Sop FILE_SET pub_headers COMPONENT sop)
-install(EXPORT Sop NAMESPACE ${CMAKE_PROJECT_NAME} DESTINATION "share")
+install(TARGETS Sop
+    EXPORT TouchDesignerTargets FILE_SET pub_headers COMPONENT sop)

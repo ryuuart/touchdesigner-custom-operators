@@ -8,3 +8,10 @@ add_subdirectory(top)
 add_subdirectory(sop)
 add_subdirectory(dat)
 add_subdirectory(chop)
+
+install(
+    EXPORT TouchDesignerTargets
+    FILENAME touchdesignerConfig.cmake
+    NAMESPACE touchdesigner::
+    DESTINATION "${CMAKE_INSTALL_LIBDIR}/cmake/touchdesigner"
+)
