@@ -14,5 +14,5 @@ target_link_libraries(Chop
         Core
 )
 
-install(TARGETS Chop EXPORT Chop FILE_SET pub_headers COMPONENT Chop)
+install(TARGETS Chop EXPORT Chop FILE_SET pub_headers COMPONENT chop)
 install(EXPORT Chop NAMESPACE ${CMAKE_PROJECT_NAME} DESTINATION ".")
