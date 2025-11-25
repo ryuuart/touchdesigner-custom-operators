@@ -15,4 +15,4 @@ target_link_libraries(Chop
 )
 
 install(TARGETS Chop EXPORT Chop FILE_SET pub_headers COMPONENT chop)
-install(EXPORT Chop NAMESPACE ${CMAKE_PROJECT_NAME} DESTINATION ".")
+install(EXPORT Chop NAMESPACE ${CMAKE_PROJECT_NAME} DESTINATION "share")

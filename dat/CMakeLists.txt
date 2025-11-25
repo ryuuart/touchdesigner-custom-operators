@@ -15,4 +15,4 @@ target_link_libraries(Dat
 )
 
 install(TARGETS Dat EXPORT Dat FILE_SET pub_headers COMPONENT dat)
-install(EXPORT Dat NAMESPACE ${CMAKE_PROJECT_NAME} DESTINATION ".")
+install(EXPORT Dat NAMESPACE ${CMAKE_PROJECT_NAME} DESTINATION "share")

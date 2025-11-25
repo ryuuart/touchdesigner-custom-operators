@@ -15,4 +15,4 @@ target_link_libraries(Sop
 )
 
 install(TARGETS Sop EXPORT Sop FILE_SET pub_headers COMPONENT sop)
-install(EXPORT Sop NAMESPACE ${CMAKE_PROJECT_NAME} DESTINATION ".")
+install(EXPORT Sop NAMESPACE ${CMAKE_PROJECT_NAME} DESTINATION "share")

@@ -15,4 +15,4 @@ target_link_libraries(Top
 )
 
 install(TARGETS Top EXPORT Top FILE_SET pub_headers COMPONENT top)
-install(EXPORT Top NAMESPACE ${CMAKE_PROJECT_NAME} DESTINATION ".")
+install(EXPORT Top NAMESPACE ${CMAKE_PROJECT_NAME} DESTINATION "share")

@@ -10,4 +10,4 @@ target_sources(Core
 )
 
 install(TARGETS Core EXPORT Core FILE_SET pub_headers COMPONENT core)
-install(EXPORT Core NAMESPACE ${CMAKE_PROJECT_NAME} DESTINATION ".")
+install(EXPORT Core NAMESPACE ${CMAKE_PROJECT_NAME} DESTINATION "share")
