@@ -1,5 +1,7 @@
 cmake_minimum_required(VERSION 3.31.0)
-project(touchdesigner_custom_operators)
+project(touchdesigner C CXX)
+
+set(CMAKE_CXX_STANDARD 20)
 
 add_subdirectory(core)
 add_subdirectory(top)
