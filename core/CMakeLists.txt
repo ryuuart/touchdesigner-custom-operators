@@ -9,6 +9,5 @@ target_sources(Core
             include/CPlusPlus_Common.h
 )
 
-add_library(${CMAKE_PROJECT_NAME}::Core ALIAS Core)
-
-install(TARGETS Core EXPORT FILE_SET pub_headers COMPONENT Core)
+install(TARGETS Core EXPORT Core FILE_SET pub_headers COMPONENT Core)
+install(EXPORT Core NAMESPACE ${CMAKE_PROJECT_NAME} DESTINATION ".")

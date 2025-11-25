@@ -14,6 +14,5 @@ target_link_libraries(Top
         Core
 )
 
-add_library(${CMAKE_PROJECT_NAME}::Top ALIAS Top)
-
-install(TARGETS Top EXPORT FILE_SET pub_headers COMPONENT Top)
+install(TARGETS Top EXPORT Top FILE_SET pub_headers COMPONENT Top)
+install(EXPORT Top NAMESPACE ${CMAKE_PROJECT_NAME} DESTINATION ".")

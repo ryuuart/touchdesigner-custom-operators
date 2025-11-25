@@ -14,6 +14,5 @@ target_link_libraries(Chop
         Core
 )
 
-add_library(${CMAKE_PROJECT_NAME}::Chop ALIAS Chop)
-
-install(TARGETS Chop EXPORT FILE_SET pub_headers COMPONENT Chop)
+install(TARGETS Chop EXPORT Chop FILE_SET pub_headers COMPONENT Chop)
+install(EXPORT Chop NAMESPACE ${CMAKE_PROJECT_NAME} DESTINATION ".")

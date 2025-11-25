@@ -14,6 +14,5 @@ target_link_libraries(Sop
         Core
 )
 
-add_library(${CMAKE_PROJECT_NAME}::Sop ALIAS Sop)
-
 install(TARGETS Sop EXPORT Sop FILE_SET pub_headers COMPONENT Sop)
+install(EXPORT Sop NAMESPACE ${CMAKE_PROJECT_NAME} DESTINATION ".")

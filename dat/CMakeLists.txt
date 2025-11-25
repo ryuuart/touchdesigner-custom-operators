@@ -14,6 +14,5 @@ target_link_libraries(Dat
         Core
 )
 
-add_library(${CMAKE_PROJECT_NAME}::Dat ALIAS Dat)
-
-install(TARGETS Dat EXPORT FILE_SET pub_headers COMPONENT Dat)
+install(TARGETS Dat EXPORT Dat FILE_SET pub_headers COMPONENT Dat)
+install(EXPORT Dat NAMESPACE ${CMAKE_PROJECT_NAME} DESTINATION ".")
