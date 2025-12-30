@@ -1,5 +1,0 @@
-filegroup(
-    name = "hdrs",
-    srcs = glob(["*.h"]),
-    visibility = ["//sop:__subpackages__"]
-)
