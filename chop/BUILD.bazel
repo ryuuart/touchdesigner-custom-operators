@@ -2,8 +2,7 @@ load("@rules_cc//cc:defs.bzl", "cc_library")
 
 cc_library(
     name = "chop",
-    hdrs = ["include/CHOP_CPlusPlusBase.h"],
-    strip_include_prefix = "include",
+    hdrs = ["//chop/include:hdrs"],
     visibility = ["//visibility:public"],
     deps = ["//core"],
 )

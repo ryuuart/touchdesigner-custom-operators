@@ -1,0 +1,5 @@
+filegroup(
+    name = "hdrs",
+    srcs = glob(["*.h"]),
+    visibility = ["//chop:__subpackages__"]
+)

@@ -2,8 +2,7 @@ load("@rules_cc//cc:defs.bzl", "cc_library")
 
 cc_library(
     name = "sop",
-    hdrs = ["include/SOP_CPlusPlusBase.h"],
-    strip_include_prefix = "include",
+    hdrs = ["//sop/include:hdrs"],
     visibility = ["//visibility:public"],
     deps = ["//core"],
 )
