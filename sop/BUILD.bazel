@@ -3,7 +3,7 @@ load("@rules_cc//cc:defs.bzl", "cc_library")
 cc_library(
     name = "sop",
     hdrs = ["include/SOP_CPlusPlusBase.h"],
-    includes = "include",
+    includes = ["include"],
     visibility = ["//visibility:public"],
     deps = ["//core"],
 )
